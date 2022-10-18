@@ -12,21 +12,21 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @SpringBootTest
 @AutoConfigureMockMvc
 public class ProdutoAPITests {
-	@Autowired
-	private MockMvc mvc;
+//	@Autowired
+//	private MockMvc mvc;
 	
-	@Test
-	public void deveriaRetornarProdutoPorId() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/produtos/1"))
-				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andDo(MockMvcResultHandlers.print());
-	}
-	
-	@Test
-	public void deveriaNaoEncontrarProduto() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/produtos/100"))
-			.andExpect(MockMvcResultMatchers.status().isNotFound())
-			.andReturn();
-	}
+//	@Test
+//	public void deveriaRetornarProdutoPorId() throws Exception {
+//		mvc.perform(MockMvcRequestBuilders.get("/produtos/1"))
+//				.andExpect(MockMvcResultMatchers.status().isOk())
+//				.andDo(MockMvcResultHandlers.print());
+//	}
+//	
+//	@Test
+//	public void deveriaNaoEncontrarProduto() throws Exception {
+//		mvc.perform(MockMvcRequestBuilders.get("/produtos/100"))
+//			.andExpect(MockMvcResultMatchers.status().isNotFound())
+//			.andReturn();
+//	}
 
 }
