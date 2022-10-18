@@ -33,3 +33,10 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: "./target/appmercado-0.0.1-SNAPSHOT.jar"
         target: "/root/listamercado/"
+    - name: Executando script remoto de deploy
+      uses: appleboy/ssh-action@master
+      with:
+        port: 22
+        host: lista.professorisidro.com.br
+        password: ${{ secrets.PASSWORD }}
+        script: /root/deploy_lista.sh
