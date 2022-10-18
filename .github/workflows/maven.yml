@@ -37,6 +37,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         port: 22
+        username: root
         host: lista.professorisidro.com.br
         password: ${{ secrets.PASSWORD }}
         script: /root/deploy_lista.sh
