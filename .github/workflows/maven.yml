@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: listing
-      run: ls -laR 
+      run: ls -laR ./target
