@@ -30,6 +30,6 @@ jobs:
         port: 22
         host: lista.professorisidro.com.br
         username: root
-        password: ${{ deploy.PASSWORD }}
+        password: ${{ secrets.PASSWORD }}
         source: "./target/appmercado-0.0.1-SNAPSHOT.jar"
         target: "/root/listamercado/"
